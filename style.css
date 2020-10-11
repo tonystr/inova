@@ -67,6 +67,45 @@ footer {
     color: #b8bcd3;
 }
 
+/* Fixed Header */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    box-shadow: 0 0 7px rgba(1, 5, 12, .08);
+    align-items: center;
+}
+
+.fixed-header nav {
+    padding: .6rem 2rem;
+}
+
+.fixed-header .brand {
+    color: #42d08e;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.fixed-header nav a {
+    margin-left: .6rem;
+    padding: 0 .6rem;
+    text-decoration: none;
+    color: #2f6a57;
+    transition: .08s;
+}
+
+.fixed-header nav a:hover {
+    background-color: #2f6a57;
+    color: #ffffff;
+}
+
 /* About Section */
 
 #about p {

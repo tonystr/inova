@@ -5,6 +5,8 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Header */
+
 header {
     min-height: 100vh;
 
@@ -23,6 +25,8 @@ header h1 {
     font-weight: 300;
     color: #42d08e;
 }
+
+/* Section Header */
 
 section > h1 {
     position: relative;
@@ -49,6 +53,8 @@ section > h1::before {
     border-top: 2px solid #8a9792;
 }
 
+/* Footer */
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -56,6 +62,8 @@ footer {
     background-color: #302e32;
     color: #b8bcd3;
 }
+
+/* Staff Section */
 
 #staff .list {
     display: flex;
@@ -70,3 +78,5 @@ footer {
 #staff .profile img {
     width: 100%;
 }
+
+/* Scehdule Section */

@@ -5,6 +5,10 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+section {
+    margin-bottom: 4rem;
+}
+
 /* Header */
 
 header {
@@ -46,7 +50,7 @@ section > h1 > span {
 section > h1::before {
     content: '';
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     top: 52%;
     left: 0;
     right: 0;
@@ -61,6 +65,15 @@ footer {
     padding: 1rem 2rem;
     background-color: #302e32;
     color: #b8bcd3;
+}
+
+/* About Section */
+
+#about p {
+    max-width: 95%;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 /* Staff Section */
@@ -83,8 +96,35 @@ footer {
 
 #schedule .list {
     max-width: 95%;
-    width: 1000px;
+    width: 1060px;
     margin: 0 auto;
+    border: 1px solid #d1d1d3;
+    border-radius: 8px;
+}
+
+#schedule .event {
+    padding: 1rem 3rem;
+}
+
+#schedule .event:not(:last-child) {
+    border-bottom: 1px solid #d1d1d3;
+}
+
+#schedule .event h1 {
+    font-weight: 600;
+}
+
+#schedule .event .title {
+    color: #24404a;
+}
+
+#schedule .event .date {
+    color: #6396cc;
+}
+
+#schedule .event .date::after {
+    content: ' - ';
+    opacity: .4;
 }
 
 /* Responsiveness */

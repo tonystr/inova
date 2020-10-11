@@ -168,6 +168,29 @@ footer details summary:hover {
     color: #ffffff;
 }
 
+.fixed-header .language {
+    padding-right: .7rem;
+    margin-right: 1.2rem;
+    border-right: 2px solid #322e48;
+}
+
+.fixed-header nav label[for="language"] {
+    color: #b8bcd3;
+    font-size: 1rem;
+    margin-right: .2rem;
+}
+
+.fixed-header select[name="language"] {
+    color: #4da285;
+    font-size: 1rem;
+    background-color: #110b15;
+    border: 2px solid #322e48;
+    cursor: pointer;
+}
+
+.fixed-header select option {
+}
+
 /* About Section */
 
 #about p {

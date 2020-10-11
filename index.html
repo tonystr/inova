@@ -9,16 +9,7 @@
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
-    <script>
-        const languagePage = {
-            'English': '',
-            'Norsk': 'norsk.html'
-        };
-
-        function changeLanguage({ target }) {
-            window.location.href = `${window.location.href.match(/(https?:\/\/)?[^/?#]+(?:\/inova)?/)[0]}/${languagePage[target.value]}`;
-        }
-    </script>
+    <script src="./language_change.js"></script>
   </head>
   <body>
     <div class="fixed-header">
@@ -31,9 +22,9 @@
                     <option name="norsk">Norsk</option>
                 </select>
             </span>
-            <a href="./#about">About us</a>
-            <a href="./#staff">Our staff</a>
-            <a href="./#schedule">Schedule</a>
+            <a href="#about">About us</a>
+            <a href="#staff">Our staff</a>
+            <a href="#schedule">Schedule</a>
         </nav>
     </div>
     <header>

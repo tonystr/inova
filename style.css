@@ -71,9 +71,13 @@ section {
     margin-bottom: 5rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 /* Section Header */
 
-section > h1 {
+section > h2 {
     position: relative;
     text-align: center;
     width: 84%;
@@ -83,12 +87,12 @@ section > h1 {
     color: #384d45;
 }
 
-section > h1 > span {
+section > h2 > span {
     background-color: #ffffff;
     padding: 0 1rem;
 }
 
-section > h1::before {
+section > h2::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -235,7 +239,7 @@ footer details summary:hover {
     border-bottom: 1px solid #d1d1d3;
 }
 
-#schedule .event h1 {
+#schedule .event h3 {
     font-weight: 600;
 }
 

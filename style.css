@@ -17,13 +17,27 @@ header {
     /* Center items */
     display: grid;
     place-items: center;
+    background-image: url("images/Anime Lines.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #110b15;
 }
 
 header h1 {
-    padding-bottom: 3rem;
-    font-size: 5rem;
+    padding: 2rem 8rem;
+    font-size: 5.4rem;
     font-weight: 300;
     color: #42d08e;
+    background-color: #110b15;
+    border: 3px solid #3a1225;
+    border-radius: 2px;
+    box-shadow: 0 1px 0px 7px #110b15;
+}
+
+header,
+section {
+    margin-bottom: 5rem;
 }
 
 /* Section Header */
@@ -59,8 +73,56 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #302e32;
+    background-color: #110b15;
     color: #b8bcd3;
+}
+
+/* Fixed Header */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #110b15;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    box-shadow: 0 0 7px rgba(1, 5, 12, .08);
+    align-items: center;
+}
+
+.fixed-header nav {
+    padding: .6rem 2rem;
+}
+
+.fixed-header .brand {
+    color: #42d08e;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.fixed-header nav a {
+    margin-left: .6rem;
+    padding: 0 .6rem;
+    text-decoration: none;
+    color: #4da285;
+    transition: .08s;
+}
+
+.fixed-header nav a:hover {
+    background-color: #2f6a57;
+    color: #ffffff;
+}
+
+/* About Section */
+
+#about p {
+    max-width: 95%;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 /* Staff Section */
@@ -80,3 +142,58 @@ footer {
 }
 
 /* Scehdule Section */
+
+#schedule .list {
+    max-width: 95%;
+    width: 1060px;
+    margin: 0 auto;
+    border: 1px solid #d1d1d3;
+    border-radius: 8px;
+}
+
+#schedule .event {
+    padding: 1rem 3rem;
+}
+
+#schedule .event:not(:last-child) {
+    border-bottom: 1px solid #d1d1d3;
+}
+
+#schedule .event h1 {
+    font-weight: 600;
+}
+
+#schedule .event .title {
+    color: #24404a;
+}
+
+#schedule .event .date {
+    color: #6396cc;
+}
+
+#schedule .event .date::after {
+    content: ' - ';
+    opacity: .4;
+}
+
+/* Responsiveness */
+
+@media(max-width: 600px) {
+    .fixed-header {
+        flex-direction: column;
+    }
+
+    .fixed-header nav a {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1168px) {
+    #staff .profile {
+        padding: 0 .5rem;
+    }
+
+    #staff .list {
+        flex-wrap: wrap;
+    }
+}

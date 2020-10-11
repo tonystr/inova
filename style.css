@@ -14,18 +14,17 @@ section {
 header {
     min-height: 100vh;
 
-    /* Center items flexbox fallback */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Center items */
-    display: grid;
-    place-items: center;
     background-image: url("images/Anime Lines.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 2px solid #110b15;
+
+    /* Center items flexbox fallback */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header h1 {
@@ -33,10 +32,37 @@ header h1 {
     font-size: 5.4rem;
     font-weight: 300;
     color: #42d08e;
-    background-color: #110b15;
-    border: 3px solid #3a1225;
-    border-radius: 2px;
-    box-shadow: 0 1px 0px 7px #110b15;
+    text-shadow: 0 0 18px #000;
+}
+
+header .scroll-prompt {
+    position: absolute;
+    z-index: 8;
+    bottom: 2.2rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+header .scroll-prompt::before,
+header .scroll-prompt::after {
+    z-index: 8;
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #ffffff;
+    bottom: -.6rem;
+}
+
+header .scroll-prompt::before {
+    left: 0;
+    right: 49.3%;
+    transform: rotate(12deg);
+}
+
+header .scroll-prompt::after {
+    left: 49.3%;
+    right: 0;
+    transform: rotate(-12deg);
 }
 
 header,
@@ -81,6 +107,28 @@ footer {
     color: #b8bcd3;
 }
 
+footer .center {
+    text-align: center;
+}
+
+footer .right {
+    text-align: right;
+}
+
+footer a {
+    color: #4da285;
+}
+
+footer a:hover {
+    background-color: #2f6a57;
+    color: #ffffff;
+}
+
+footer details summary:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
 /* Fixed Header */
 
 .fixed-header {
@@ -103,7 +151,7 @@ footer {
 
 .fixed-header .brand {
     color: #42d08e;
-    padding-left: 2rem;
+    padding: 0 2rem;
     font-size: 2rem;
 }
 

@@ -9,11 +9,19 @@
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
+    <script src="./language_change.js"></script>
   </head>
   <body>
     <div class="fixed-header">
       <div class="brand">Inova</div>
       <nav>
+          <span class="language" onchange="changeLanguage(event)">
+              <label for="language">Language:</label>
+              <select name="language">
+                  <option name="norsk">Norsk</option>
+                  <option name="index">English</option>
+              </select>
+          </span>
         <a href="#about">Om oss</a>
         <a href="#staff">Vårt team</a>
         <a href="#schedule">Timeplan</a>
@@ -119,14 +127,10 @@
       <details class="right">
         <summary>Kilder</summary>
         bakgrunnsbilde fra
-        <a href="https://www.publicdomainpictures.net/en/" target="_blank"
-          >https://www.publicdomainpictures.net/</a
-        >
+        <a href="https://www.publicdomainpictures.net/en/" target="_blank">https://www.publicdomainpictures.net/</a>
         (public domain) <br />
         Profilbilder fra
-        <a href="https://thispersondoesnotexist.com/" target="_blank"
-          >https://thispersondoesnotexist.com/</a
-        >
+        <a href="https://thispersondoesnotexist.com/" target="_blank">https://thispersondoesnotexist.com/</a>
       </details>
     </footer>
   </body>

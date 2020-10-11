@@ -9,14 +9,22 @@
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
+    <script src="./language_change.js"></script>
   </head>
   <body>
     <div class="fixed-header">
         <div class="brand">Inova</div>
         <nav>
-            <a href="./#about">About us</a>
-            <a href="./#staff">Our staff</a>
-            <a href="./#schedule">Schedule</a>
+            <span class="language" onchange="changeLanguage(event)">
+                <label for="language">Language:</label>
+                <select name="language">
+                    <option name="index">English</option>
+                    <option name="norsk">Norsk</option>
+                </select>
+            </span>
+            <a href="#about">About us</a>
+            <a href="#staff">Our staff</a>
+            <a href="#schedule">Schedule</a>
         </nav>
     </div>
     <header>

@@ -80,3 +80,21 @@ footer {
 }
 
 /* Scehdule Section */
+
+#schedule .list {
+    max-width: 95%;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Responsiveness */
+
+@media(max-width: 1168px) {
+    #staff .profile {
+        padding: 0 .5rem;
+    }
+
+    #staff .list {
+        flex-wrap: wrap;
+    }
+}
